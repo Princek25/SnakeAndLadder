@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 import java.util.Random;
 
 public class SnakeAndLadder {
