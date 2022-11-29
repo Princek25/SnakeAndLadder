@@ -7,10 +7,12 @@ public class SnakeAndLadder {
     static final int IS_LADDER = 1;
     static final int IS_SNAKE = 2;
     static final int NO_PLAY = 0;
+    static int totalDieRoll = 0;
 
     public static int dieRoll() {
         Random random = new Random();
         int dieNumber = random.nextInt(6) + 1;
+        totalDieRoll++;
         return dieNumber;
     }
     public static void start(int dieNumber) {
@@ -39,5 +41,6 @@ public class SnakeAndLadder {
             System.out.println("Die Number is:- " + dieNumber);
             System.out.println("Current Position:- " + position);
         }
+        System.out.println("Number of times die rolled:- " + totalDieRoll);
     }
 }
