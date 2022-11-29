@@ -1,4 +1,5 @@
 package com.bridgelabz;
+
 import java.util.Random;
 
 public class SnakeAndLadder {
@@ -18,7 +19,8 @@ public class SnakeAndLadder {
         switch (option) {
             case IS_LADDER:
                 System.out.println("You got ladder");
-                position = position + dieNumber;
+                if (position+dieNumber<=100)
+                    position = position + dieNumber;
                 break;
             case IS_SNAKE:
                 System.out.println("you got snake");
