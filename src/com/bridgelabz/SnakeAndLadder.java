@@ -31,9 +31,11 @@ public class SnakeAndLadder {
     public static void main(String[] args) {
         System.out.println("Welcome to Snake and Ladder Simulation Program");
         System.out.println("Current Position:- " + position);
-        dieRoll();
-        int dieNumber = dieRoll();
-        System.out.println("Die Number is:- " + dieNumber);
-        start(dieNumber);
+        while (position!=100){
+            int dieNumber = dieRoll();
+            start(dieNumber);
+            System.out.println("Die Number is:- " + dieNumber);
+            System.out.println("Current Position:- " + position);
+        }
     }
 }
